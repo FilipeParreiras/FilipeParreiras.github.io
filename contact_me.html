@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <h1>Contact Details</h1>
+    <p>Adress: Algueirao Mem-Martins, Lisboa</p>
+    <p>Telemovel: 966430146</p>
+    <p>Email: filipesmsparreiras@gmail.com</p>
+
+    <form action="mailto:filipesmsparreiras@gmail.com" method="POST" enctype="text/plain">
+        <div>
+            <label for="Name">Your Name</label>
+            <input type="text" name="Name">
+        </div>
+        <div>
+            <label for="Email">Your Email</label>
+            <input type="email" name="Email" id="">
+        </div>
+        <div>
+            <label>Entity Type</label>
+            <div>
+                <input type="radio" name="Entity_type" value="P">
+                <label for="P">Particular</label>
+            </div>
+            <div>
+                <input type="radio" name="Entity_type" value="E" checked>
+                <label for="E">Enterprise</label>
+            </div>
+        </div>
+         
+        <input type="submit" name="" >
+    </form>
+</body>
+</html>
