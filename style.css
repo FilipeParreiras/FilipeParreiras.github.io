@@ -1,0 +1,98 @@
+body {
+    background-color: #F2ECE4;
+    align-content: center;
+    overflow: hidden; /* Hide scrollbars */
+}
+
+
+
+
+.abstract {
+    width: 500;
+    height: 500px;
+}
+.foto-cv {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+/* Overlay image */
+
+.main-container {
+    align-self:  center;
+    display: grid;
+    grid-template-columns: repeat(100, 1fr);
+    position: relative;
+}
+
+.name {
+    grid-column: 50;
+    grid-row: 1;
+    z-index: 1;
+    margin: auto auto;
+    background-color: #BFBFBF;
+    width: 80%;
+    height: 30%;
+    opacity: 90%;
+    text-align: center;
+    padding-top: 10%;
+    color: #C4634D;
+}
+
+.abstract {
+    grid-column: 50;
+    grid-row: 1;
+}
+
+.name1 {
+    font-size: 1.rem;
+    font-family: 'Domine', serif;
+}
+
+/* About-me */
+.text {
+    color: #494949;
+}
+
+/* Down Arrow */
+
+.about-me {
+    color: #BFBFBF;
+}
+.homepage-images{
+    width: 300;
+    height: 250px;
+}
+.card{
+    margin: .5%;
+    background-color: #bfbfbf3a;
+    border: none;
+}
+.footer {
+    color: #C4634D;
+}
+
+/* Animations */
+
+#down-arrow {
+    transition: all 2s ease-in-out;
+}
+
+#down-arrow:hover {
+    animation-name: down;
+    animation-duration: 500ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+
+}
+
+@keyframes down {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(1vh);
+    }
+}
